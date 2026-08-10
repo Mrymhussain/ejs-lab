@@ -16,7 +16,7 @@
     <% if (item.category === 'mains') { %>
       <h3><%= item.name %></h3>
       <p>Price: $<%= item.price %></p>
-      <p>Rating: <%= item.rating %>/5</p>
+      <p>Rating: <%= item.rating %>/5 <%= item.rating === 5 ? '⭐' : '' %></p>
       <p><%= item.details %></p>
     <% } %>
   <% }) %>
@@ -26,7 +26,7 @@
     <% if (item.category === 'desserts') { %>
       <h3><%= item.name %></h3>
       <p>Price: $<%= item.price %></p>
-      <p>Rating: <%= item.rating %>/5</p>
+      <p>Rating: <%= item.rating %>/5 <%= item.rating === 5 ? '⭐' : '' %></p>
       <p><%= item.details %></p>
     <% } %>
   <% }) %>
@@ -36,7 +36,7 @@
     <% if (item.category === 'sides') { %>
       <h3><%= item.name %></h3>
       <p>Price: $<%= item.price %></p>
-      <p>Rating: <%= item.rating %>/5</p>
+      <p>Rating: <%= item.rating %>/5 <%= item.rating === 5 ? '⭐' : '' %></p>
       <p><%= item.details %></p>
     <% } %>
   <% }) %>
